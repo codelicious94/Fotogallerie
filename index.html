@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon's Weltreise</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="./js/translate.js"></script>
+  </head>
+  <body onload="init()">
+    <section class="menu">
+      <div class="menuList">
+        <a id="menuAustralia" href="#australia">Australien</a>
+        <a id="menuNewZealand" href="#newzealand">Neuseeland</a>
+        <a id="menuSouthAfrica" href="#southafrica">Südafrika</a>
+        <a id="menuNamibia" href="#namibia">Namibia</a>
+        <a id="menuDubai" href="#dubai">Kreuzfahrt Dubai</a>
+      </div>
+      <div>
+        <img
+          onclick="translateEnglish()"
+          class="languageLogo"
+          src="./assets/icons/england.png"
+          alt="Language England"
+        />
+        <img
+          onclick="translateGerman()"
+          class="languageLogo"
+          src="./assets/icons/german.png"
+          alt="Language German"
+        />
+      </div>
+    </section>
+    <main>
+      <h1 id="mainTitle">Willkommen zu meiner Weltreise:</h1>
+
+      <div class="imageContainer" id="australia">
+        <h2 id="australiaTitle">Australien:</h2>
+        <p id="australiaText">
+          Meine Traumhafte Weltreise begann in Perth/Western Australia. Von dort
+          aus fuhren wir in den Norden zum Pink Lake in Port Gregory, zum Shell
+          Beach in Albany und noch vielen anderen Sehenswürdigkeiten. Auch im
+          Süden von Western Australia waren wir. Die schöne Weinregion von
+          Margaret River, wie auch die traumhaften Strände in Esperance haben
+          wir besucht. Danach sind wir nach Cairns geflogen und starteten dort
+          unsere zweite Etappe von unserer Australienreise. In insgesamt 4
+          Wochen sind wir von Cairns nach Sydney gefahren. Zu den Highlights
+          dieser Etappe gehört die Insel Fraser Island, wie auch die schönen
+          Wandergebite und Nationalparks. Hier habt Ihr einen Einblick von
+          meiner traumhaften Australienreise, eine unvergessliche Zeit!
+        </p>
+        <div class="imgBox" id="australiaGallery"></div>
+        <div>
+          <div id="popUpImage" class="d-none"></div>
+        </div>
+      </div>
+      <div class="imageContainer" id="newzealand">
+        <h2 id="newzealandTitle">Neuseeland:</h2>
+        <p id="newzealandText">
+          Unsere Reise durch Neuseeland begann in der Hauptstadt Auckland. Wir
+          erkundeten sowohl die Nordinsel als auch die Südinsel. Besonders
+          beeindruckend waren die atemberaubenden Wanderungen, die vielfältigen
+          Landschaften und die unterschiedlichen Vegetationen, die uns in
+          Neuseeland begegneten. Ein weiteres Highlight war unser Besuch beim
+          Weta Workshop, einem neuseeländischen Unternehmen für Spezialeffekte
+          mit Sitz in Wellington. Dort werden Dienstleistungen für Filmprojekte
+          wie Design-Entwürfe, Make-up-Effekte, Requisiten, Kreaturen, Puppen,
+          Miniaturen, Modelle und Großskulpturen angeboten. Bekannt sind sie für
+          Filme wie King Kong oder die Herr der Ringe, Hobbits Reihe. Zudem
+          produziert Weta Workshop auch Merchandising-Artikel. Der Höhepunkt
+          unserer Reise war ein Tagesausflug zu den Fjorden Neuseelands, genauer
+          gesagt nach Milford Sound. Es war ein unvergesslicher Tag auf dem
+          Boot, der uns mit seiner Schönheit und Einzigartigkeit beeindruckt
+          hat.
+        </p>
+        <div class="imgBox" id="newzealandGallery"></div>
+        <div>
+          <div id="popUpImage" class="popUpImage d-none"></div>
+        </div>
+      </div>
+      <div class="imageContainer" id="southafrica">
+        <h2 id="southafricaTitle">Südafrika:</h2>
+        <p id="southafricaText">
+          Das Neue Jahr 2024 starteten wir in der Hauptstadt Südafrikas, Cape
+          Town. Von dort aus erkundeten wir die berühmte Garden Route, die uns
+          mit ihren malerischen Landschaften und verschiedenen Weingütern
+          begeisterte. Eine besondere Erinnerung war unser Aufenthalt in einer
+          kleinen Lodge, wo wir die einmalige Gelegenheit hatten, mit einem
+          majestätischen Elefanten spazieren zu gehen. Es war ein
+          unvergessliches Erlebnis und eines der besten Highlights meiner
+          Weltreise! Südafrika ist nicht nur für seine Wein- und Genusskultur
+          bekannt, sondern auch für seine beeindruckende Tierwelt, was ich nach
+          meiner Reise nur bestätigen kann.
+        </p>
+        <div class="imgBox" id="southafricaGallery"></div>
+        <div>
+          <div id="popUpImage" class="popUpImage d-none"></div>
+        </div>
+      </div>
+      <div class="imageContainer" id="namibia">
+        <h2 id="namibiaTitle">Namibia:</h2>
+        <p id="namibiaText">
+          Die Reise durch Namibia war eines der beeindruckendsten Erlebnisse,
+          die ich je hatte. Zu den Highlights zählten die endlosen Weiten von
+          Sand, die eindrucksvollen Landschaften, der Fish River Canyon im Süden
+          und der Etosha National Park mit seiner vielfältigen Tierwelt.
+          Besonders beeindruckend war, wie sich die Landschaften im Land
+          verändern konnten und wie freundlich die Menschen zu uns waren.
+          Namibia gehört definitiv zu den Top 3 der Länder, die ich besucht
+          habe. Es wird sicherlich nicht mein letzter Besuch dort gewesen sein.
+        </p>
+        <div class="imgBox" id="namibiaGallery"></div>
+        <div>
+          <div id="popUpImage" class="popUpImage d-none"></div>
+        </div>
+      </div>
+      <div class="imageContainer" id="dubai">
+        <h2 id="dubaiTitle">Kreuzfahrt Dubai / Abu Dhabi / Oman:</h2>
+        <p id="dubaiText">
+          Als letzte Etappe meiner Weltreise habe ich eine MSC-Kreuzfahrt von
+          Abu Dhabi über Dubai bis in den Oman gebucht. Die Kreuzfahrt dauerte 8
+          Tage und es war beeindruckend zu sehen, was in den Städten alles
+          gebaut wurde. Besonders beeindruckend war das höchste Gebäude der
+          Welt, der Burj Khalifa, sowie die riesige Shopping Mall in Dubai.
+          Alles in den Städten war extrem gepflegt und sauber. Leider waren die
+          Preise enorm hoch und die Länder entsprechen eher nicht meinem
+          Geschmack, weshalb ich sie nur bedingt weiterempfehlen würde.
+        </p>
+        <div class="imgBox" id="dubaiGallery"></div>
+        <div>
+          <div id="popUpImage" class="popUpImage d-none"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footerDataProtectionImprintContainer">
+        <a class="footerDataProtectionImprint" href="../html/datenschutz.html"
+          >Datenschutz</a
+        >
+        ||
+        <a class="footerDataProtectionImprint" href="../html/impressum.html"
+          >Impressum</a
+        >
+      </div>
+      <div class="footerSocialMediaContainer">
+        <a href="https://github.com/codelicious94"
+          ><img
+            class="footerSocialMedia"
+            src="../assets/icons/github.svg"
+            alt="Github"
+        /></a>
+        <a href="https://www.instagram.com/djnineofficial/"
+          ><img
+            class="footerSocialMedia"
+            src="../assets/icons/instagram.png"
+            alt="Instagram"
+        /></a>
+        <a href="https://www.linkedin.com/in/simon-matter-63a935209/"
+          ><img
+            class="footerSocialMedia"
+            src="../assets/icons/linkedin.png"
+            alt="Linkedin"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
