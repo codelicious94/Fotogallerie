@@ -207,11 +207,11 @@ main {
 }
 
 ::-webkit-scrollbar-button:end:increment {
-    background-image: url(../assets/icons/scrollbarDown.svg)
+    background-image: url(./assets/icons/scrollbarDown.svg)
 }
 
 ::-webkit-scrollbar-button:start:decrement {
-   background-image: url(../assets/icons/scrollbarUp.svg)
+   background-image: url(./assets/icons/scrollbarUp.svg)
 }
 
 /* Footer */
