@@ -9,15 +9,29 @@
     <script src="./js/translate.js"></script>
   </head>
   <body onload="init()">
-    <section class="menu">
-      <div class="menuList">
-        <a id="menuAustralia" href="#australia">Australien</a>
-        <a id="menuNewZealand" href="#newzealand">Neuseeland</a>
-        <a id="menuSouthAfrica" href="#southafrica">Südafrika</a>
-        <a id="menuNamibia" href="#namibia">Namibia</a>
-        <a id="menuDubai" href="#dubai">Kreuzfahrt Dubai</a>
-      </div>
-      <div>
+    <header>
+      <nav class="menuSidebar" id="menuSidebar">
+        <ul class="menuSidebarList">
+          <li><h3>Meine Weltreise:</h3></li>
+          <li><a id="menuAustralia" href="#australia">Australien</a></li>
+          <li><a id="menuNewZealand" href="#newzealand">Neuseeland</a></li>
+          <li><a id="menuSouthAfrica" href="#southafrica">Südafrika</a></li>
+          <li><a id="menuNamibia" href="#namibia">Namibia</a></li>
+          <li><a id="menuDubai" href="#dubai">Kreuzfahrt Dubai</a></li>
+          <img src="./assets/icons/löschen.png" class="closeSidebar" onclick="closeMenu()">        
+        </ul>
+      </nav>
+      <nav class="menu">
+        <ul class="menuList">
+          <li><a id="menuAustralia" href="#australia">Australien</a></li>
+          <li><a id="menuNewZealand" href="#newzealand">Neuseeland</a></li>
+          <li><a id="menuSouthAfrica" href="#southafrica">Südafrika</a></li>
+          <li><a id="menuNamibia" href="#namibia">Namibia</a></li>
+          <li><a id="menuDubai" href="#dubai">Kreuzfahrt Dubai</a></li>
+        </ul>
+      </nav>
+
+      <div class="languageLogoContainer">
         <img
           onclick="translateEnglish()"
           class="languageLogo"
@@ -31,7 +45,10 @@
           alt="Language German"
         />
       </div>
-    </section>
+
+      <img src="./assets/icons/burgerMenu.svg" class="burgerMenu" alt="burger menu" onclick="showMenu()">
+
+    </header>
     <main>
       <h1 id="mainTitle">Willkommen zu meiner Weltreise:</h1>
 

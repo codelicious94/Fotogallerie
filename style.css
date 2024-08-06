@@ -28,6 +28,12 @@ h1 {
 
 /* MenuList */
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -37,6 +43,7 @@ h1 {
 .menuList {
     display: flex;
     justify-content: center;
+    list-style-type: none;
 }
 
 .menuList a {
@@ -53,6 +60,33 @@ h1 {
     color: black;
     background-color: rgb(25, 121, 245);
     font-style: italic;
+}
+
+.menuSidebar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #333;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 225ms ease-in-out;
+}
+
+.showSidebar {
+    transform: translateX(0);
+}
+
+.burgerMenu {
+    display: none;
+}
+
+.languageLogoContainer {
+    margin-right: 32px;
 }
 
 .languageLogo {
@@ -80,6 +114,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .imageContainer p {
@@ -288,11 +323,58 @@ footer {
 
 /* mediaquerry */
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
     .menuList {
-        flex-direction: column;
+        display: none;
     }
 
+    .menuSidebar {
+        display: flex;
+        justify-content: center;
+    }    
+
+    .menuSidebarList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        gap: 40px;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .menuSidebarList a {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        padding: 12px;
+        border-radius: 20px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .menuSidebarList a:hover {
+        color: rgb(25, 121, 245);
+        font-style: italic;
+    }
+
+    .burgerMenu {
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        margin-right: 32px;
+    }
+
+    .closeSidebar {
+        height: 16px;
+        width: 16px;
+        cursor: pointer;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 850px) {
     h1 {
         font-size: 24px;
         margin: 0 32px;
@@ -310,12 +392,6 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .menu {
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 8px;
-    }
-
     .icons img {
         height: 24px;
     }

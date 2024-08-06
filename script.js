@@ -376,3 +376,19 @@ function closeImage() {
     document.getElementById('popUpImage').classList.add('d-none');
     document.body.classList.remove('no-scroll');  // Restore scrolling
 }
+
+// Burger Menu //
+
+function showMenu() {
+    document.getElementById('menuSidebar').style.display = 'flex';
+    setTimeout(() => {
+        document.getElementById('menuSidebar').classList.add('showSidebar');
+    }, 10); // small delay to trigger the transition
+}
+  
+function closeMenu(){
+    document.getElementById('menuSidebar').classList.remove('showSidebar');
+    setTimeout(() => {
+        document.getElementById('menuSidebar').style.display = 'none';
+    }, 225); // match the transition duration
+}
